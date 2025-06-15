@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cà phê & Quần áo</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+  <header class="sticky-header">
+    <div class="logo"><i class="fas fa-mug-hot"></i> Cà phê & Quần áo</div>
+    <nav>
+      <ul>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#clothes">Quần áo</a></li>
+        <li><a href="#booking">Đặt bàn</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Liên hệ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Thưởng thức cà phê - Thể hiện phong cách</h1>
+    <p>Không gian thư giãn, đồ uống chất lượng, thời trang cá tính.</p>
+  </section>
+
+  <main>
+    <section id="menu" class="section">
+      <h2><i class="fas fa-coffee"></i> Menu Cà phê</h2>
+      <div class="swiper mySwiper" id="coffee-swiper">
+        <div class="swiper-wrapper" id="coffee-wrapper">
+        </div>
+      </div>
+    </section>
+
+    <section id="clothes" class="section">
+      <h2><i class="fas fa-tshirt"></i> Quần áo</h2>
+      <div class="swiper mySwiper" id="clothes-swiper">
+        <div class="swiper-wrapper" id="clothes-wrapper">
+        </div>
+      </div>
+    </section>
+
+    <section id="booking" class="section">
+      <h2><i class="fas fa-calendar-check"></i> Đặt bàn</h2>
+      <form class="booking-form" data-aos="fade-up">
+        <label for="name">Họ và tên:</label>
+        <input type="text" id="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required />
+
+        <label for="date">Ngày:</label>
+        <input type="date" id="date" required />
+
+        <label for="time">Giờ:</label>
+        <input type="time" id="time" required />
+
+        <label for="guests">Số lượng khách:</label>
+        <input type="number" id="guests" min="1" value="1" required />
+
+        <button type="submit">Gửi yêu cầu</button>
+      </form>
+    </section>
+
+    <section id="blog" class="section">
+      <h2><i class="fas fa-newspaper"></i> Blog / Tin tức</h2>
+      <div class="swiper mySwiper" id="blog-swiper">
+        <div class="swiper-wrapper" id="blog-wrapper">
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2><i class="fas fa-envelope"></i> Liên hệ</h2>
+      <p data-aos="fade-up">4 Ngách 78 Ngõ 68 Cầu Giấy, Cầu Giấy, Hà Nội.</p>
+      <p data-aos="fade-up" data-aos-delay="100">Email: peyin@example.com</p>
+      <div data-aos="fade-up" data-aos-delay="200" class="map-container">
+        <iframe
+          src="https://www.google.com/maps?q=4%20Ng%C3%A1ch%2078%20Ng%C3%B5%2068%20C%E1%BA%A7u%20Gi%E1%BA%A5y,%20H%C3%A0%20N%E1%BB%99i&output=embed"
+          width="100%"
+          height="400"
+          style="border:0; border-radius: 12px; margin-top: 20px;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+</div>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Cà phê & Quần áo. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+  </script>
+  <!-- SwiperJS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
